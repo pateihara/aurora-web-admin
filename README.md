@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aurora by Flui — Plataforma Web Administrativa · Etapa 2
 
-## Getting Started
+> Plataforma web funcional desenvolvida para a Etapa 2 do Charge Platform Challenge — parceria FIAP, Flui & Google · 2026.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Sobre o projeto
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O **Aurora by Flui** é uma solução voltada à melhoria da experiência de recarga de veículos elétricos e híbridos plug-in no Brasil.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+A proposta do produto é funcionar como um guia inteligente de eletropostos, ajudando motoristas a encontrar pontos de recarga com informações mais completas, avaliações por critério, filtros úteis e contexto real de uso.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Nesta etapa, o foco deste repositório é a **plataforma web administrativa da equipe Flui**, responsável pela gestão dos pontos de recarga e pelo acompanhamento das avaliações enviadas pelos motoristas.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Objetivo da Etapa 2
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Na Etapa 2, o protótipo visual evoluiu para uma versão funcional da plataforma web.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Conforme o escopo da entrega, esta versão utiliza **dados simulados** e funciona de forma independente do app mobile.
 
-## Deploy on Vercel
+Nesta etapa, ainda não são exigidos:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Backend com API REST;
+- Banco de dados real;
+- Autenticação de usuários;
+- Integração entre app mobile e plataforma web;
+- Vídeo-pitch.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Funcionalidades implementadas
+
+- Dashboard administrativo com métricas simuladas da rede;
+- Listagem de pontos de recarga;
+- Cadastro de novos pontos;
+- Edição de pontos existentes;
+- Desativação de pontos;
+- Busca por nome, endereço ou cidade;
+- Filtro por status do ponto;
+- Filtro por tipo de conector;
+- Visualização detalhada de cada ponto;
+- Exibição de conectores, potência, comodidades e status operacional;
+- Visualização de avaliações dos motoristas por ponto;
+- Filtro de avaliações por ponto;
+- Relatórios simulados de uso da rede;
+- Persistência local com `localStorage`;
+- Interface responsiva;
+- Identidade visual alinhada ao projeto Aurora by Flui.
+
+---
+
+## Telas da plataforma web
+
+| # | Tela | Descrição |
+|---|------|-----------|
+| 1 | **Dashboard** | Métricas da rede, alerta de ponto offline, mini-mapa, gráfico de recargas e últimas avaliações |
+| 2 | **Pontos de recarga** | Tabela de pontos com busca, filtros, status, avaliação, potência e painel lateral de detalhe |
+| 3 | **Cadastro / edição de ponto** | Formulário funcional para cadastrar e editar pontos de recarga simulados |
+| 4 | **Avaliações** | Visualização de avaliações dos motoristas, nota média, critérios avaliados e ranking dos pontos |
+| 5 | **Relatórios** | Métricas mensais simuladas, volume de recargas, distribuição por conector e ranking por uso |
+
+---
+
+## Tecnologias utilizadas
+
+- Next.js
+- React
+- JavaScript
+- CSS Global
+- LocalStorage
+- Vercel
+
+---
+
+## Estrutura do projeto
+
+```txt
+aurora-web-admin/
+├── src/
+│   └── app/
+│       ├── data/
+│       │   ├── reviews.js
+│       │   └── stations.js
+│       ├── globals.css
+│       ├── layout.js
+│       └── page.js
+├── package.json
+└── README.md# aurora-web-admin
+# aurora-web-admin
+# aurora-web-admin

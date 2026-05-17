@@ -1,0 +1,68 @@
+//src/data/reviews.js
+
+export const initialReviews = [
+  {
+    id: "1",
+    user: "Mariana R.",
+    initials: "MR",
+    stationId: "1",
+    stationName: "Flui Batel",
+    rating: 5,
+    time: "há 3h",
+    comment: "Ponto impecável. Carregou meu veículo em menos de 20 minutos.",
+    criteria: {
+      disponibilidade: 5,
+      qualidade: 5,
+      comodidades: 5,
+      sinalizacao: 4,
+    },
+  },
+  {
+    id: "2",
+    user: "Gabriel T.",
+    initials: "GT",
+    stationId: "3",
+    stationName: "Flui Centro",
+    rating: 3,
+    time: "há 5h",
+    comment: "Ponto 2 fora de operação há dois dias. Precisa de manutenção.",
+    criteria: {
+      disponibilidade: 2,
+      qualidade: 3,
+      comodidades: 4,
+      sinalizacao: 3,
+    },
+  },
+  {
+    id: "3",
+    user: "Laura P.",
+    initials: "LP",
+    stationId: "5",
+    stationName: "Flui Shopping Mueller",
+    rating: 4,
+    time: "há 8h",
+    comment: "Wi-Fi não funcionou hoje, mas a recarga foi rápida.",
+    criteria: {
+      disponibilidade: 5,
+      qualidade: 4,
+      comodidades: 3,
+      sinalizacao: 4,
+    },
+  },
+  {
+    id: "4",
+    user: "Renato M.",
+    initials: "RM",
+    stationId: "2",
+    stationName: "Flui Água Verde",
+    rating: 5,
+    time: "há 1 dia",
+    comment: "Boa sinalização, fácil acesso e carregadores disponíveis.",
+    criteria: {
+      disponibilidade: 5,
+      qualidade: 5,
+      comodidades: 4,
+      sinalizacao: 5,
+    },
+  },
+];
