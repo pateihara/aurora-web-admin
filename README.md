@@ -87,6 +87,118 @@ aurora-web-admin/
 │       ├── layout.js
 │       └── page.js
 ├── package.json
-└── README.md# aurora-web-admin
-# aurora-web-admin
-# aurora-web-admin
+└── README.md
+```
+
+---
+
+## Como rodar localmente
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/pateihara/aurora-web-admin.git
+```
+
+Acesse a pasta:
+
+```bash
+cd aurora-web-admin
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Execute o projeto:
+
+```bash
+npm run dev
+```
+
+Acesse no navegador:
+
+```txt
+http://localhost:3000
+```
+
+---
+
+## Build de produção
+
+Para gerar a versão de produção:
+
+```bash
+npm run build
+```
+
+Para executar a versão de produção localmente:
+
+```bash
+npm start
+```
+
+---
+
+## Deploy
+
+A plataforma web foi publicada na Vercel.
+
+```txt
+https://aurora-web-admin.vercel.app/
+```
+
+---
+
+## Dados simulados
+
+Nesta etapa, os dados são simulados e armazenados localmente no navegador com `localStorage`.
+
+Isso permite demonstrar as principais ações administrativas da plataforma, como cadastro, edição, listagem, filtros e desativação de pontos de recarga, sem necessidade de backend ou banco de dados real.
+
+Caso o usuário queira retornar ao estado inicial da demonstração, há uma opção de **resetar dados** no menu lateral.
+
+---
+
+## Identidade visual
+
+A interface mantém a identidade visual criada na Etapa 1 do Aurora by Flui:
+
+| Token | Valor | Uso |
+|------|-------|-----|
+| `--green` | `#AAFF3E` | Ação primária, status livre e CTAs |
+| `--purple` | `#7C3FCC` | Identidade Flui e elementos de apoio |
+| `--pl` | `#B87DFF` | Avaliações, estrelas e destaques secundários |
+| `--amber` | `#FFB23E` | Status parcial ou atenção |
+| `--red` | `#FF5F5F` | Status offline ou erro |
+| `--base` | `#0A0A0F` | Fundo principal |
+| `--surf` | `#13131A` | Cards e superfícies |
+
+**Tipografia:** Sora para títulos e DM Sans para textos de apoio.
+
+---
+
+## Observação sobre escopo
+
+A plataforma web desta etapa não possui integração com o aplicativo mobile. Cada solução funciona de forma independente, conforme solicitado no enunciado da Etapa 2.
+
+A integração entre app mobile, plataforma web, backend e banco de dados fica prevista para uma etapa futura.
+
+---
+
+## Integrantes
+
+| Nome | RM |
+|------|------|
+| Natalia Guaita | RM560106 |
+| Patricia Eihara | RM559419 |
+| Rafael Santos | RM560567 |
+
+---
+
+## Links
+
+- Deploy web: https://aurora-web-admin.vercel.app/
+- Repositório GitHub: https://github.com/pateihara/aurora-web-admin
